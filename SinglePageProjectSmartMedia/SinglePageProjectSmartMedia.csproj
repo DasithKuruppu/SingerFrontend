@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC833EF0-FC1A-4718-ABAF-FA080CD84B82}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SinglePageProjectSmartMedia</RootNamespace>
+    <AssemblyName>SinglePageProjectSmartMedia</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.FileSystems">
+      <HintPath>..\packages\Microsoft.Owin.FileSystems.3.0.0\lib\net45\Microsoft.Owin.FileSystems.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.StaticFiles">
+      <HintPath>..\packages\Microsoft.Owin.StaticFiles.3.0.0\lib\net45\Microsoft.Owin.StaticFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.2\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.2\lib\net45\System.Web.Http.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="public\Content\Images\download.jpg" />
+    <Content Include="public\Content\Images\logo_singer.png" />
+    <Content Include="public\Content\Images\logo.png" />
+    <Content Include="public\Content\Images\Products\1577541_110222215033_Alienware_m15x.jpg" />
+    <Content Include="public\Content\Images\Products\alienware-area-51-m15x-m17x-laptops_09.jpg" />
+    <Content Include="public\Content\Images\Products\alienware_17_light1_s.jpg" />
+    <Content Include="public\Content\Images\Products\Beats.jpg" />
+    <Content Include="public\Content\Images\Products\Blu-Ray.jpg" />
+    <Content Include="public\Content\Images\Products\DDR-RAM.jpg" />
+    <Content Include="public\Content\Images\Products\i7processor.jpg" />
+    <Content Include="public\Content\Images\Products\led_f7000_smart_tvl._V372583854_.jpg" />
+    <Content Include="public\Content\Images\Products\P2.jpg" />
+    <Content Include="public\Content\Images\Products\P3.jpg" />
+    <Content Include="public\Content\Images\Products\P4.jpg" />
+    <Content Include="public\Content\Images\Products\ProductRec_1.jpg" />
+    <Content Include="public\Content\Images\Products\P1.jpg" />
+    <Content Include="public\Content\Images\Products\SamsungLedTV1.png" />
+    <Content Include="public\Content\Images\Products\Smartphones-HTC-Blackberry-Samsung-iPhone.jpg" />
+    <Content Include="public\Content\Images\Products\smartphones-juni-2013.jpg" />
+    <Content Include="public\Content\Images\Products\Wifi.jpg" />
+    <Content Include="public\Content\Images\Products\LED-Display.jpg" />
+    <Content Include="public\Content\Images\Products\Nvdia-Card.jpg" />
+    <Content Include="public\Content\Images\Products\Windows.jpg" />
+    <Content Include="public\Content\Images\Promotions-Corosal\Prommotion_electronics.jpg" />
+    <Content Include="public\Content\Images\SINGER.jpg" />
+    <Content Include="public\Content\Images\Singer-logo-86C0459274-seeklogo.com.gif" />
+    <Content Include="public\Content\Images\Promotions-Corosal\SIN_WEDPAC150000-01_zoom.jpg" />
+    <Content Include="public\Content\Images\User.jpg" />
+    <Content Include="public\Content\Scripts\Common\jquery\jquery.widget.min.js" />
+    <Content Include="public\Content\Themes\MetroUI\fonts\iconFont.eot" />
+    <Content Include="public\Content\Themes\MetroUI\fonts\iconFont.json" />
+    <Content Include="public\Content\Themes\MetroUI\fonts\iconFont.ttf" />
+    <Content Include="public\Content\Themes\MetroUI\fonts\iconFont.woff" />
+    <Content Include="public\Content\Themes\MetroUI\fonts\metroSysIcons.ttf" />
+    <Content Include="public\Content\Themes\MetroUI\fonts\metroSysIcons.woff" />
+    <Content Include="public\Content\Themes\MetroUI\fonts\OpenSans-Bold.woff" />
+    <Content Include="public\Content\Themes\MetroUI\fonts\OpenSans-Light.woff" />
+    <Content Include="public\Content\Themes\MetroUI\fonts\OpenSans.woff" />
+    <Content Include="public\Content\Themes\MetroUI\fonts\PTSerif-Caption.woff" />
+    <Content Include="public\Content\Themes\MetroUI\Styles\jquery.ui.tabs.css" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\Content\Themes\MetroUI\fonts\iconFont.dev.svg" />
+    <Content Include="public\Content\Themes\MetroUI\fonts\iconFont.svg" />
+    <Content Include="public\Content\Themes\MetroUI\fonts\metroSysIcons.svg" />
+    <Content Include="public\Content\Scripts\Common\jquery\jquery.colorbox-min.js" />
+    <Content Include="public\Content\Scripts\Common\jquery\jquery.min.js" />
+    <Content Include="public\Content\Scripts\Custom\Customize.js" />
+    <Content Include="public\Content\Themes\MetroUI\Styles\jquery-ui.min.css" />
+    <Content Include="public\Content\Scripts\Common\jquery\jquery-ui.min.js" />
+    <Content Include="public\Content\Themes\MetroUI\Scripts\metro.min.js" />
+    <Content Include="public\Content\Themes\MetroUI\Styles\Customize.css" />
+    <Content Include="public\Content\Themes\MetroUI\Styles\iconFont.css" />
+    <Content Include="public\Content\Themes\MetroUI\Styles\metro-bootstrap-responsive.css" />
+    <Content Include="public\Content\Themes\MetroUI\Styles\metro-bootstrap.css" />
+    <Content Include="public\Content\Themes\MetroUI\Styles\Products.css" />
+    <Content Include="public\Content\Scripts\Common\jquery\jQuery.succinct.min.js" />
+    <Content Include="public\WebPages\index.html" />
+    <Content Include="public\WebPages\SubPages\Products_List.html" />
+    <Content Include="public\WebPages\SubPages\Product_Detail.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="Controllers\ValuesController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\Content\Other\" />
+    <Folder Include="public\Content\Videos\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60386/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
